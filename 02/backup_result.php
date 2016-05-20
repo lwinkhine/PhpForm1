@@ -1,5 +1,5 @@
-
 <?php
+
 
 echo "姓名". $_POST['sirname'] ;
 echo  $_POST['name'] ."<br />\n";
@@ -30,4 +30,4 @@ echo("<option value='".$k."'</option>");
 
     }
 
-?>
+ ?>
