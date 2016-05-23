@@ -6,7 +6,7 @@
 <style>
 h1{
     color:#00FFFF;
-    margin-left:600px;
+    text-align: center;
 }
 body{
 background-color:Lavender;
@@ -43,10 +43,12 @@ margin-bottom: 20px;
 
 <p>
 <label><span>性別:</span><br>
-<span class="radio">
-<label><input type="radio"　name="gender"  value="male" />男</label>
-<label><input type="radio"　name="gender"  value="female"/>女</label>
-<label><input type="radio"　name="gender"  value="unknown"/>不明</label>
+
+
+
+<label><input type="radio"　name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male" />男</label>
+<label><input type="radio"　name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female"/>女</label>
+<label><input type="radio"　name="gender" <?php if (isset($gender) && $gender=="unknown") echo "checked";?> value="unknown"/>不明</label>
 </span>
 </label><br>
 </P>
@@ -95,10 +97,10 @@ margin-bottom: 20px;
 
 <p>
 <label><span>どこで知りましたか:</span><br>
-<label><input type="checkbox" name="phone" value="phoneadver">スマートフォンの広告</label>
-<label><input type="checkbox" name="magazine" value="magazineadver">雑誌</label>
-<label><input type="checkbox" name="friend" value="friendtalk">友達から</label>
-<label><input type="checkbox" name="other" value="other">その他</label>
+<label><input type="checkbox" name="knowhow" value="スマートフォンの広告">スマートフォンの広告</label>
+<label><input type="checkbox" name="knowhow" value="雑誌">雑誌</label>
+<label><input type="checkbox" name="knowhow" value="友達から">友達から</label>
+<label><input type="checkbox" name="knowhow" value="その他">その他</label>
 </label>
 <br>
 </p>
