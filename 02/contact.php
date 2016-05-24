@@ -17,7 +17,7 @@
 </div>
 
 <div class="box">
-<input type="text" name="sirname" maxlength="30" required><br>
+<input type="text" name="sirname" maxlength="30" required>
 </div>
 </P>
 
@@ -26,7 +26,7 @@
 名
 </div>
 <div class="box">
-<input type="text" name="name" maxlength="30" required><br>
+<input type="text" name="name" maxlength="30" required>
 </div>
 </P>
 
@@ -41,7 +41,7 @@
      <label for="女">女</label>
      <input type="radio" name="gender" value="女">
      <label for="不明">不明</label>
-     <input type="radio" name="gender" value="不明"><br>
+     <input type="radio" name="gender" value="不明">
 </div>
 </P>
 
@@ -53,7 +53,7 @@
 <input type="text" name="phonenumber1" maxlength="3" placeholder="(080)"/>
 <input type="text" name="phonenumber2" maxlength="4" placeholder="1234"/>
 <input type="text" name="phonenumber3" maxlength="4"placeholder="5678"/>
-<br></div>
+</div>
 </p>
 
 <p>
@@ -63,7 +63,7 @@
 <div class="box">
 <textarea name="address" class="txtfiled" cols="30" rows="5"></textarea>
 
-<br></div>
+</div>
 </p>
 
 <p>
@@ -73,7 +73,7 @@
 <div class="mailbox">
 <input type="text" name="yourname" maxlength="30" placeholder="abc"/> @
 <input type="text" name="com" maxlength="30" placeholder="gmail.com" />
-<br>
+
 </div>
 </P>
 
@@ -87,7 +87,7 @@
 <option value="アカウントの削除">アカウントの削除</option>
 <option value="利用方法">利用方法</option>
 </select>
-<br></div>
+</div>
 </p>
 
 <p>
@@ -96,7 +96,7 @@
 </div>
 <div class="box">
 <textarea name="question" class="txtfiled" cols="50" rows="10"></textarea>
-<br>
+
 </div>
 </p>
 
@@ -113,7 +113,7 @@
 <input type="checkbox" name="knowhow[2]" value="友達から">
 <label for="その他">その他</label>
 <input type="checkbox" name="knowhow[3]" value="その他">
-<br></div>
+</div>
 </p>
 
 

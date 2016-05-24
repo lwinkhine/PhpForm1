@@ -17,7 +17,7 @@
 <div class="right">
 <?php
 echo $_POST['sirname'] ;
-echo  $_POST['name'] ."<br />\n";
+echo  $_POST['name'] ;
 ?>
 </div>
 </p>
@@ -49,7 +49,7 @@ print "不明";
 <?php
 echo $_POST['phonenumber1'];
 echo $_POST['phonenumber2'];
-echo $_POST['phonenumber3']."<br />\n";
+echo $_POST['phonenumber3'];
 ?>
 </div>
 </p>
@@ -60,7 +60,7 @@ echo $_POST['phonenumber3']."<br />\n";
 </div>
 <div class="right">
 <?php
-echo $_POST['address']."<br />\n";
+echo $_POST['address'];
 ?>
 </div>
 </p>
@@ -77,7 +77,7 @@ echo $_POST['yourname'];
 ＠
 
 <?php
-echo $_POST['com']."<br />\n";
+echo $_POST['com'];
 ?>
 </div>
 </p>
@@ -103,7 +103,7 @@ echo("<option value='".$k."'</option>");
 </div>
 <div class="right">
 <?php
-echo $_POST['question']."<br />\n";
+echo $_POST['question'];
 ?>
 </div>
 </p>
@@ -134,8 +134,9 @@ print "その他";
 </p>
 
 <p>
-
+<div class="sent">
 送信しました。
+</div>
 </p>
 
 </body>

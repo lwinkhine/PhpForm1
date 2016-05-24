@@ -14,12 +14,22 @@ div.left{
 
     margin-left:800px;
     text-align:left;
+    font-weight: bold;
+    color:#FF99CC;
 
 }
 div.right{
 
-    margin-left:1000px;
+
+   margin-left:1000px;
     text-align:left;
+   font-weight: bold;
 
-
+}
+div.sent{
+    text-align: center;
+    font-weight: bold;
+    font-style: oblique;
+    font-size: x-large;
+    color:#CC6699;
 }

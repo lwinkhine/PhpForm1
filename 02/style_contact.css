@@ -19,24 +19,30 @@
         margin-right:750px;
         text-align: left;
         float:left;
+        font-weight: bold;
+        color:#FF99CC;
     }
     div.box{
         margin-left: 1000px;
         margin-right:0px;
         text-align:left;
         float:left;
+        font-weight: bold;
+
 
    }
+
+
     div.phbox{
         float:right;
 
-        margin-right:368px;
+        margin-right:372px;
         }
 
     div.mailbox{
 
        float:right;;
-      margin-right:530px;
+      margin-right:534px;
 
      }
 
