@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+h1{
+    color:#00FFFF;
+    text-align: center;
+}
+body{
+background-color:Lavender;
+text-align: center;
+}
+
+
+div.left{
+
+    margin-left:800px;
+    text-align:left;
+
+}
+div.right{
+
+    margin-left:1000px;
+    text-align:left;
+
+
+}

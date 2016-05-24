@@ -3,116 +3,126 @@
 <head>
 <meta charset="UTF-8">
 <title>お問い合わせ</title>
-<style>
-h1{
-    color:#00FFFF;
-    text-align: center;
-}
-body{
-background-color:Lavender;
-}
-p{
-margin-top: 20px;
-margin-left: 600px;
-margin-right:600px;
-margin-bottom: 20px;
-
-
-}
-
-
-</style>
+<link rel="stylesheet" href="style_contact.css"/>
 </head>
+
 <body>
 
 <form action="result.php" method="post">
 <h1>お問い合わせ</h1>
+
 <p>
-<label><span>性:</span><br>
+<div class="q">
+性
+</div>
+
+<div class="box">
 <input type="text" name="sirname" maxlength="30" required><br>
-</label>
+</div>
 </P>
 
-
 <p>
-<label><span>名:</span><br>
+<div class="q">
+名
+</div>
+<div class="box">
 <input type="text" name="name" maxlength="30" required><br>
-</label>
+</div>
 </P>
 
 
 <p>
-<label><span>性別:</span><br>
-
-
-
-<label><input type="radio"　name="gender" <?php if (isset($gender) && $gender=="male") echo "checked";?> value="male" />男</label>
-<label><input type="radio"　name="gender" <?php if (isset($gender) && $gender=="female") echo "checked";?> value="female"/>女</label>
-<label><input type="radio"　name="gender" <?php if (isset($gender) && $gender=="unknown") echo "checked";?> value="unknown"/>不明</label>
-</span>
-</label><br>
+<div class="q">
+性別
+</div>
+<div class="box">
+    <label for="男">男</label>
+     <input type="radio" name="gender" value="男"checked>
+     <label for="女">女</label>
+     <input type="radio" name="gender" value="女">
+     <label for="不明">不明</label>
+     <input type="radio" name="gender" value="不明"><br>
+</div>
 </P>
 
 <p>
-<label><span>電話番号:</span><br>
-<input type="text" name="phonenumber" maxlength="3" placeholder="(080)"/>
-<input type="text" name="phonenumber" maxlength="4" placeholder="1234"/>
-<input type="text" name="phonenumber" maxlength="4"placeholder="1234"/>
-</label><br>
+<div class="q">
+電話番号
+</div>
+<div class="phbox">
+<input type="text" name="phonenumber1" maxlength="3" placeholder="(080)"/>
+<input type="text" name="phonenumber2" maxlength="4" placeholder="1234"/>
+<input type="text" name="phonenumber3" maxlength="4"placeholder="5678"/>
+<br></div>
 </p>
 
 <p>
-<label><span>住所:</span><br>
-<input name="address" cols="30" rows="5">
-</label><br>
+<div class="q">
+住所
+</div>
+<div class="box">
+<textarea name="address" class="txtfiled" cols="30" rows="5"></textarea>
+
+<br></div>
 </p>
 
 <p>
-<label><span>メールアドレス（送信先）:</span><br>
-<input type="emailname" name="yourname" maxlength="30" placeholder="abc"/> @
-<input type="emailcom" name="com" maxlength="30" placeholder="gmail.com" />
-</label>
+<div class="q">
+メールアドレス（送信先）
+</div>
+<div class="mailbox">
+<input type="text" name="yourname" maxlength="30" placeholder="abc"/> @
+<input type="text" name="com" maxlength="30" placeholder="gmail.com" />
 <br>
+</div>
 </P>
 
 <p>
-<label><span>質問カデゴリ:</span><br>
-
-<select name="category"><br>
-
+<div class="q">
+質問カデゴリ
+</div>
+<div class="box">
+<select name="category">
 <option value="セキュリティについて">セキュリティについて</option>
 <option value="アカウントの削除">アカウントの削除</option>
 <option value="利用方法">利用方法</option>
 </select>
-</label>
-<br>
+<br></div>
 </p>
 
 <p>
-<label><span>質問内容:</span><br>
+<div class="q">
+質問内容
+</div>
+<div class="box">
 <textarea name="question" class="txtfiled" cols="50" rows="10"></textarea>
-</label>
 <br>
+</div>
 </p>
 
 <p>
-<label><span>どこで知りましたか:</span><br>
-<label><input type="checkbox" name="knowhow" value="スマートフォンの広告">スマートフォンの広告</label>
-<label><input type="checkbox" name="knowhow" value="雑誌">雑誌</label>
-<label><input type="checkbox" name="knowhow" value="友達から">友達から</label>
-<label><input type="checkbox" name="knowhow" value="その他">その他</label>
-</label>
-<br>
+<div class="q">
+どこで知りましたか
+</div>
+<div class="box">
+<label for="スマートフォンの広告">スマートフォンの広告</label>
+<input type="checkbox" name="knowhow[0]" value="スマートフォンの広告" checked>
+<label for="雑誌">雑誌</label>
+<input type="checkbox" name="knowhow[1]" value="雑誌">
+<label for="友達から">友達から</label>
+<input type="checkbox" name="knowhow[2]" value="友達から">
+<label for="その他">その他</label>
+<input type="checkbox" name="knowhow[3]" value="その他">
+<br></div>
 </p>
 
 
-<p>
-<label><span>submit:</span><br>
-<input type="Submit" name="send "value="送信">
-</P>
+<div class="soushin">
+<input type="Submit" name"send" value="送信">
+</div>
+
 
 
 </form>
-
 </body>
 </html>

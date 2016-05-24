@@ -1,0 +1,46 @@
+@charset "UTF-8";
+    h1{
+        color:#00FFFF;
+        text-align: center;
+    }
+    body{
+    background-color:Lavender;
+    text-align: center;
+    }
+    p{
+    margin-top: 20px;
+    margin-left: 600px;
+    margin-right:600px;
+    margin-bottom: 20px;
+    }
+
+    div.q{
+        margin-left: 750px;
+        margin-right:750px;
+        text-align: left;
+        float:left;
+    }
+    div.box{
+        margin-left: 1000px;
+        margin-right:0px;
+        text-align:left;
+        float:left;
+
+   }
+    div.phbox{
+        float:right;
+
+        margin-right:368px;
+        }
+
+    div.mailbox{
+
+       float:right;;
+      margin-right:530px;
+
+     }
+
+
+    div.soushin{
+   margin-top: 600px;
+   }

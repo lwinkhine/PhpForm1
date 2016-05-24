@@ -1,69 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<title>入力終了</title>
-
-<style>
-h1{
-    color:#00FFFF;
-    text-align: center;
-}
-body{
-background-color:Lavender;
-}
-p{
-margin-top: 20px;
-margin-left: 600px;
-margin-right:600px;
-margin-bottom: 20px;
-
-
-}
-
-</style>
+<title>お問い合わせ終了</title>
+<link rel="stylesheet" href="style_result.css"/>
 </head>
 
 <body>
-<h1>入力終了</h1>
+<h1>お問い合わせ終了</h1>
+
 <p>
-<label><span>名前:</span></label>
-
-
+<div class="left">
+名前
+</div>
+<div class="right">
 <?php
 echo $_POST['sirname'] ;
 echo  $_POST['name'] ."<br />\n";
 ?>
+</div>
 </p>
+
 <p>
-<label><span>性別:</span></label>
-
-
+<div class="left">
+性別
+</div>
+<div class="right">
 <?php
-
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+if ($_POST["gender"] == "男") {
+print "男";
+}elseif($_POST["gender"] == "女") {
+print "女";
+}elseif($_POST["gender"] == "不明") {
+print "不明";
+}
+}
 ?>
+</div>
 </p>
+
 <p>
-<label><span>電話番号:</span></label>
-
-
+<div class="left">
+電話番号
+</div>
+<div class="right">
 <?php
-
-echo $_POST['phonenumber']."<br />\n";
+echo $_POST['phonenumber1'];
+echo $_POST['phonenumber2'];
+echo $_POST['phonenumber3']."<br />\n";
 ?>
+</div>
 </p>
+
 <p>
-<label><span>:住所</span></label>
-
-
+<div class="left">
+住所
+</div>
+<div class="right">
 <?php
 echo $_POST['address']."<br />\n";
 ?>
+</div>
 </p>
+
 <p>
-<label><span>メールアドレス（送信先):</span></label>
-
-
+<div class="left">
+メールアドレス（送信先)
+</div>
+<div class="right">
 <?php
 echo $_POST['yourname'];
 ?>
@@ -73,42 +79,63 @@ echo $_POST['yourname'];
 <?php
 echo $_POST['com']."<br />\n";
 ?>
+</div>
 </p>
+
 <p>
-<label><span>質問カデゴリ:</span></label>
-
-
+<div class="left">
+質問カデゴリ
+</div>
+<div class="right">
 <?php
 echo $_POST['category'];
 $ks=array("セキュリティについて","アカウントの削除","利用方法");
 foreach($ks as $k){
 echo("<option value='".$k."'</option>");
-
-    }
-
+}
 ?>
+</div>
 </p>
+
 <p>
-<label><span>質問内容::</span></label>
-
-
+<div class="left">
+質問内容
+</div>
+<div class="right">
 <?php
 echo $_POST['question']."<br />\n";
 ?>
+</div>
 </p>
+
 <p>
-<label><span>どこで知りましたか:</span></label>
-
-
+<div class="left">
+どこで知りましたか
+</div>
+<div class="right">
 <?php
-
-echo $_POST['knowhow']."<br />\n";
-
-
+if (isset($_POST["knowhow"])) {
+$kh = $_POST["knowhow"];
+}
+if(isset($kh[0])){
+print "スマートフォンの広告";
+}
+if(isset($kh[1])){
+print "雑誌";
+}
+if(isset($kh[2])){
+print "友達から";
+}
+if(isset($kh[3])){
+print "その他";
+}
 ?>
+</div>
 </p>
+
 <p>
-<label><span>送信しました</span></label>
+
+送信しました。
 </p>
 
 </body>
