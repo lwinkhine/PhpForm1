@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -11,6 +10,7 @@
 <h1>お問い合わせ終了</h1>
 
 <p>
+<div id="box1">
 <div class="left">
 名前
 </div>
@@ -47,8 +47,11 @@ print "不明";
 </div>
 <div class="right">
 <?php
+$hyphen="-";
 echo $_POST['phonenumber1'];
+echo $hyphen;
 echo $_POST['phonenumber2'];
+echo $hyphen;
 echo $_POST['phonenumber3'];
 ?>
 </div>
@@ -136,6 +139,7 @@ print "その他";
 <p>
 <div class="sent">
 送信しました。
+</div>
 </div>
 </p>
 

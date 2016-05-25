@@ -1,17 +1,29 @@
 @charset "UTF-8";
+
+
+
     h1{
-        color:#00FFFF;
+        color:thistle;
         text-align: center;
+        background-color: #F5F5F5;
+        box-shadow: 10px 10px 10px 5px #FFF0F5;
+        border:ridge 5px MistyRose;
+        margin-left: 700px;
+        margin-right: 700px;
     }
     body{
     background-color:Lavender;
     text-align: center;
+
     }
+
     p{
-    margin-top: 20px;
-    margin-left: 600px;
-    margin-right:600px;
-    margin-bottom: 20px;
+        margin-top: 20px;
+        margin-left: 600px;
+        margin-right:600px;
+        margin-bottom: 20px;
+
+
     }
 
     div.q{
@@ -21,6 +33,8 @@
         float:left;
         font-weight: bold;
         color:#FF99CC;
+
+
     }
     div.box{
         margin-left: 1000px;
@@ -30,23 +44,18 @@
         font-weight: bold;
 
 
+
    }
 
-
-    div.phbox{
+div.phbox{
         float:right;
+        margin-right:318px;
 
-        margin-right:372px;
         }
 
     div.mailbox{
 
-       float:right;;
-      margin-right:534px;
+       float:right;
+      margin-right:505px;
 
      }
-
-
-    div.soushin{
-   margin-top: 600px;
-   }

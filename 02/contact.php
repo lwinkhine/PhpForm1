@@ -11,22 +11,23 @@
 <form action="result.php" method="post">
 <h1>お問い合わせ</h1>
 
+
 <p>
 <div class="q">
 性
 </div>
 
 <div class="box">
-<input type="text" name="sirname" maxlength="30" required>
+<input type="text" name="sirname" maxlength="30" required><strong>必要</strong>
 </div>
-</P>
+</p>
 
 <p>
 <div class="q">
 名
 </div>
 <div class="box">
-<input type="text" name="name" maxlength="30" required>
+<input type="text" name="name" maxlength="30" required><strong>必要</strong>
 </div>
 </P>
 
@@ -50,9 +51,9 @@
 電話番号
 </div>
 <div class="phbox">
-<input type="text" name="phonenumber1" maxlength="3" placeholder="(080)"/>
-<input type="text" name="phonenumber2" maxlength="4" placeholder="1234"/>
-<input type="text" name="phonenumber3" maxlength="4"placeholder="5678"/>
+<input type="text" name="phonenumber1" maxlength="3" placeholder="(080)"/> -
+<input type="text" name="phonenumber2" maxlength="4" placeholder="1234"/> -
+<input type="text" name="phonenumber3" maxlength="4"placeholder="5678"/><strong>必要</strong>
 </div>
 </p>
 
@@ -72,7 +73,7 @@
 </div>
 <div class="mailbox">
 <input type="text" name="yourname" maxlength="30" placeholder="abc"/> @
-<input type="text" name="com" maxlength="30" placeholder="gmail.com" />
+<input type="text" name="com" maxlength="30" placeholder="gmail.com" /><strong>必要</strong>
 
 </div>
 </P>
@@ -116,13 +117,15 @@
 </div>
 </p>
 
-
-<div class="soushin">
-<input type="Submit" name"send" value="送信">
+</div>
+<div class="q">
+<input type="Submit"  value="送信">
+<input type="reset" value="クリア">
 </div>
 
 
 
 </form>
+
 </body>
 </html>
