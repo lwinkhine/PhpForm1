@@ -5,19 +5,20 @@
 <title>お問い合わせ</title>
 <link rel="stylesheet" href="style_contact.css"/>
 </head>
-
 <body>
-
+<div id="container">
+<!--result.phpに繋ぐ-->
 <form action="result.php" method="post">
+
+<!--見出し-->
 <h1>お問い合わせ</h1>
-
-
 <p>
+<!--styleを付ける為divを入れる-->
 <div class="q">
 性
 </div>
-
 <div class="box">
+<!--性を30文字以上入れられないようにする、必要も見せる-->
 <input type="text" name="sirname" maxlength="30" required><strong>必要</strong>
 </div>
 </p>
@@ -36,13 +37,14 @@
 <div class="q">
 性別
 </div>
+<!--ラジオボタン作成-->
 <div class="box">
+    <input type="radio" name="gender" value="男"checked>
     <label for="男">男</label>
-     <input type="radio" name="gender" value="男"checked>
-     <label for="女">女</label>
-     <input type="radio" name="gender" value="女">
-     <label for="不明">不明</label>
-     <input type="radio" name="gender" value="不明">
+    <input type="radio" name="gender" value="女">
+    <label for="女">女</label>
+    <input type="radio" name="gender" value="不明">
+    <label for="不明">不明</label>
 </div>
 </P>
 
@@ -50,6 +52,7 @@
 <div class="q">
 電話番号
 </div>
+<!--入れた番号を3-4-4式しか入れないようにする、例としてplaceholderで見せる-->
 <div class="phbox">
 <input type="text" name="phonenumber1" maxlength="3" placeholder="(080)"/> -
 <input type="text" name="phonenumber2" maxlength="4" placeholder="1234"/> -
@@ -61,9 +64,9 @@
 <div class="q">
 住所
 </div>
+<!--住所書く為、列と行を決める-->
 <div class="box">
-<textarea name="address" class="txtfiled" cols="30" rows="5"></textarea>
-
+<textarea name="address" class="txtfield" cols="30" rows="5"></textarea>
 </div>
 </p>
 
@@ -71,10 +74,10 @@
 <div class="q">
 メールアドレス（送信先）
 </div>
+<!--30文字以上入れないようにする、例としてplaceholderで見せる-->
 <div class="mailbox">
 <input type="text" name="yourname" maxlength="30" placeholder="abc"/> @
 <input type="text" name="com" maxlength="30" placeholder="gmail.com" /><strong>必要</strong>
-
 </div>
 </P>
 
@@ -82,8 +85,9 @@
 <div class="q">
 質問カデゴリ
 </div>
+<!--選択ボックスの作成-->
 <div class="box">
-<select name="category">
+<select name="category" class="cataQ">
 <option value="セキュリティについて">セキュリティについて</option>
 <option value="アカウントの削除">アカウントの削除</option>
 <option value="利用方法">利用方法</option>
@@ -95,9 +99,9 @@
 <div class="q">
 質問内容
 </div>
+<!--質問内容書く為、列と行を決める-->
 <div class="box">
-<textarea name="question" class="txtfiled" cols="50" rows="10"></textarea>
-
+<textarea name="question" class="txtfield" cols="50" rows="10"></textarea>
 </div>
 </p>
 
@@ -105,27 +109,29 @@
 <div class="q">
 どこで知りましたか
 </div>
+<!--チェックボックスの作成（複数選択可）-->
+<!--配列に値を入れる-->
 <div class="box">
+<input type="checkbox" name="knowhow[0]" value="スマートフォンの広告">
 <label for="スマートフォンの広告">スマートフォンの広告</label>
-<input type="checkbox" name="knowhow[0]" value="スマートフォンの広告" checked>
-<label for="雑誌">雑誌</label>
 <input type="checkbox" name="knowhow[1]" value="雑誌">
-<label for="友達から">友達から</label>
+<label for="雑誌">雑誌</label>
 <input type="checkbox" name="knowhow[2]" value="友達から">
-<label for="その他">その他</label>
+<label for="友達から">友達から</label>
 <input type="checkbox" name="knowhow[3]" value="その他">
+<label for="その他">その他</label>
 </div>
 </p>
 
-</div>
+<!--送信(sumit)ボタンを押すと、result.phpに行きます-->
 <div class="q">
 <input type="Submit"  value="送信">
+
+<!--クリア（reset)ボタンを押すと、最初の何も入力してない状態に戻す-->
 <input type="reset" value="クリア">
 </div>
 
-
-
 </form>
-
+</div>
 </body>
 </html>

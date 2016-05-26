@@ -1,43 +1,67 @@
 @charset "UTF-8";
 
+
+*{
+
+   margin:0px;
+    padding:0px;
+}
+
+#container2{
+width:1800px;
+height:1000px;
+margin:auto;
+background-color: Lavender;
+border-left: 10px ridge MistyRose;
+border-right: 10px ridge MistyRose;
+
+}
+
+
+/* 見出し  */
 h1{
     color:thistle;
     text-align: center;
     background-color: #F5F5F5;
     box-shadow: 10px 10px 10px 5px #FFF0F5;
-    border:ridge 5px MistyRose;
+    border:ridge 15px MistyRose;
 }
+
+
+/* body*/
 body{
-background-color:Lavender;
+background-color:SeaShell;
 text-align: center;
 }
+
+
+/* 左側の質問*/
 div.left{
-     margin-left:800px;
+    margin-left:800px;
     text-align:left;
     font-weight: bold;
     color:#FF99CC;
-
 }
+
+
+/* 右側の答え*/
 div.right{
     margin-left:1000px;
     text-align:left;
-   font-weight: bold;
+    font-weight: bold;
 
 }
-div.sent{
+
+
+/* 文字（送信しました）のstyle*/
+div.done{
     text-align: center;
     font-weight: bold;
     font-size: x-large;
     color:#FF6699;
-    border:ridge 5px MistyRose;
+    border:ridge 20px MistyRose;
     background-color: #F5F5F5;
-    box-shadow: 10px 10px 10px 5px #FFF0F5;
-    margin-left: 800px;
-    margin-right: 800px;
-}
-#box1{
-
-background-color: #F5F5F5;
-box-shadow: 10px 10px 10px 15px #FFF0F5;
+    margin-left: 700px;
+    margin-right: 700px;
 
 }

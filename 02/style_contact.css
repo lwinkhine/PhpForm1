@@ -1,23 +1,41 @@
 @charset "UTF-8";
 
+*{
 
+    margin:0px;
+    padding:0px;
+}
 
-    h1{
+#container{
+width:1800px;
+height:1000px;
+margin:auto;
+background-color: Lavender;
+border-left: 10px ridge MistyRose;
+border-right: 10px ridge MistyRose;
+
+}
+/* 見出し  */
+h1{
         color:thistle;
         text-align: center;
         background-color: #F5F5F5;
         box-shadow: 10px 10px 10px 5px #FFF0F5;
-        border:ridge 5px MistyRose;
+        border:ridge 20px MistyRose;
         margin-left: 700px;
         margin-right: 700px;
     }
-    body{
-    background-color:Lavender;
+
+
+/* body*/
+body{
+    background-color:SeaShell;
     text-align: center;
+
 
     }
 
-    p{
+p{
         margin-top: 20px;
         margin-left: 600px;
         margin-right:600px;
@@ -26,36 +44,102 @@
 
     }
 
-    div.q{
+/* 右側の質問*/
+div.q{
         margin-left: 750px;
         margin-right:750px;
         text-align: left;
         float:left;
         font-weight: bold;
         color:#FF99CC;
-
-
     }
-    div.box{
+
+
+
+/* 左側の入力フィールド*/
+div.box{
         margin-left: 1000px;
         margin-right:0px;
         text-align:left;
         float:left;
         font-weight: bold;
+    }
 
 
-
-   }
-
+/* 電話番号入れるフィールド**/
 div.phbox{
         float:right;
-        margin-right:318px;
+        margin-right:215px;
 
         }
 
-    div.mailbox{
+
+/* メールアドレス入れるフィールド**/
+div.mailbox{
 
        float:right;
-      margin-right:505px;
+       margin-right:400px;
 
      }
+
+
+/* type="text"に作ったフィールドの枠**/
+input[type="text"]{
+
+   border: solid 1px #FF99FF;
+   box-shadow: 0 0 5px 2px #FFCCCC;
+}
+
+
+/* ラジオボタンの枠**/
+input[type="radio"]{
+
+   border: solid 1px #FF99FF;
+   box-shadow: 0 0 5px 2px #FFCCCC;
+}
+
+
+/* チェックボックスの枠**/
+input[type="checkbox"]{
+
+   border: solid 1px #FF99FF;
+   box-shadow: 0 0 5px 2px #FFCCCC;
+}
+
+
+/* 送信ボタンの枠**/
+input[type="submit"]{
+
+   border: solid 1px #FF99FF;
+   box-shadow: 0 0 7px 7px #FFCCCC;
+}
+
+
+input[type="reset"]{
+
+   border: solid 1px #FF99FF;
+   box-shadow: 0 0 7px 7px #FFCCCC;
+}
+
+
+/*質問カテゴリーの中身文字と枠を色付ける*/
+select{
+ position:relative;
+}
+/*categoryのclassname=cataQ*/
+.cataQ {
+  color: #FF6699;
+  border: solid 1px #707070;
+  box-shadow: 0 0 5px 2px #FFCCCC;
+}
+
+
+/*住所と質問内容の枠を色付ける*/
+textarea{
+    position:relative;
+}
+/*addressとquestionのclassname=txtfield*/
+.txtfield{
+    border: solid 1px #707070;
+    box-shadow: 0 0 5px 2px #FFCCCC;
+}
