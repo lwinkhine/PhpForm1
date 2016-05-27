@@ -95,15 +95,6 @@
 </div>
 </p>
 
-<p>
-<div class="q">
-質問内容
-</div>
-<!--質問内容書く為、列と行を決める-->
-<div class="box">
-<textarea name="question" class="txtfield" cols="50" rows="10"></textarea>
-</div>
-</p>
 
 <p>
 <div class="q">
@@ -123,6 +114,19 @@
 </div>
 </p>
 
+
+
+<p>
+<div class="q">
+質問内容
+</div>
+<!--質問内容書く為、列と行を決める-->
+<div class="box">
+<textarea name="question" class="txtfield" cols="50" rows="10"></textarea>
+</div>
+</p>
+
+
 <!--送信(sumit)ボタンを押すと、result.phpに行きます-->
 <div class="q">
 <input type="Submit"  value="送信">
@@ -133,5 +137,57 @@
 
 </form>
 </div>
+
+<?php
+
+$a= $_POST['sirname'];
+$b= $_POST['name'];
+$c= $_POST['gender'];
+$d= $_POST['phonenumber1'];
+$e= $_POST['phonenumber2'];
+$f= $_POST['phonenumber3'];
+$g= $_POST['address'];
+$h= $_POST['yourname'];
+$i= $_POST['com'];
+$j= $_POST['category'];
+$k= $_POST['knowhow'];
+$l= $_POST['question'];
+$g = nl2br($g);
+$l = nl2br($l);
+
+
+$data = "<hr>¥r¥n";
+$data = $data."<p>名前:".$a." ".$b."</p>¥r¥n";
+$data = $data."<p>性別:".$c."</p>¥r¥n";
+$data = $data."<p>電話番号:".$d." ".$e."　".$f."</p>¥r¥n";
+$data = $data."<p>住所質問カデゴリ:".$g."</p>¥r¥n";
+$data = $data."<p>メールアドレス（送信先）:".$h." ".$i."</p>¥r¥n";
+$data = $data."<p>質問カデゴリ:".$j."</p>¥r¥n";
+$data = $data."<p>どこで知りましたか:".$k."</p>¥r¥n";
+$data = $data."<p>質問内容:".$l."</p>¥r¥n";
+
+
+
+
+$keijban_file = 'contact_log.txt';
+
+$fp = fopen($keijban_file, 'ab');
+
+if ($fp){
+    if (flock($fp, LOCK_EX)){
+        if (fwrite($fp,  $data) === FALSE){
+            print('ファイル書き込みに失敗しました');
+        }
+
+        flock($fp, LOCK_UN);
+    }else{
+        print('ファイルロックに失敗しました');
+    }
+}
+
+fclose($fp);
+
+?>
+
 </body>
 </html>

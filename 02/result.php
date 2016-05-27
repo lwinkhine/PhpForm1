@@ -117,17 +117,6 @@ echo("<option value='".$k."'</option>");
 </div>
 </p>
 
-<!--質問内容表示-->
-<p>
-<div class="left">
-質問内容
-</div>
-<div class="right">
-<?php
-echo $_POST['question'];
-?>
-</div>
-</p>
 
 <!--どこで知りましたか表示-->
 <p>
@@ -160,6 +149,20 @@ print "その他";
 ?><br><br>
 </div>
 </p>
+
+
+<!--質問内容表示-->
+<p>
+<div class="left">
+質問内容
+</div>
+<div class="right">
+<?php
+echo $_POST['question'];
+?>
+</div><br><br><br>
+</p>
+
 
 
 <p>
