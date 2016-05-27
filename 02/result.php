@@ -168,11 +168,11 @@ print "その他";
 送信しました。
 </div><br><br>
 </p>
+
+
 <!--元ページに戻って書き直す為、元のページにリンク-->
-<p>
-<div class="rewrite">
-<a href="contact.php">書き直します</a>
-</div>
+<a href="contact.php">未入力の状態で書き直します</a>
+
 
 </div>
 </body>
