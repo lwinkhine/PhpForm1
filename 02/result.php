@@ -166,8 +166,14 @@ print "その他";
 <!--文字をstyle入れる為divを入れる-->
 <div class="done">
 送信しました。
-</div>
+</div><br><br>
 </p>
+
+<!--元ページに戻って書き直す為、元のページにリンク-->
+<p>
+<div class="rewrite">
+<a href="contact.php">元のページに戻ります</a>
+</div>
 
 </div>
 </body>
